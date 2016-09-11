@@ -17,6 +17,15 @@ html, body {
 	min-height:100%;
 	font-family:Artial, Verdana, sans-serif;
 }
+
+.testbox {
+	width: 320px;
+	height: 568px;
+	background: url(img/ierepo.png) 0 0 no-repeat;
+	background-size: contain;
+	border-radius: 4px;
+}
+
 .content {
     position: relative;
     width: 100%;
@@ -29,7 +38,7 @@ html, body {
   background-attachment:fixed;
 }
 .second {
-  background:#FFCCCC 50% 0 no-repeat;
+/*	background:#FFCCCC url(img/section01.png) 50% 0 no-repeat;*/
   background-attachment:fixed;
 }
 .third {
