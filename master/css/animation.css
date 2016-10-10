@@ -1,0 +1,25 @@
+/*
+animation-delay:要素が読み込まれてからアニメーションを始めるまでの遅延時間を設定;
+animation-direction:アニメーションのシーケンス完了時に、逆方向にアニメーションして繰り返すか、始めの状態にリセットしてアニメーションを繰り返すかを設定;
+animation-duration:1 回のアニメーションサイクルに要する時間の長さ;
+animation-iteration-count;アニメーションを繰り返す回数を設定します。アニメーションを無限に繰り返すには infinite を指定してください。;
+animation-name:アニメーションのキーフレームを示す @keyframes @ 規則の名前を指定;
+animation-play-state:アニメーションを一時停止したり、再開したりすることができます;
+animation-timing-function:アニメーションの進め方を設定します。これは加速曲線を定義することで、キーフレーム間のアニメーションをどのように進めていくかを表します;
+animation-fill-mode:アニメーションの実行前後に、指定したスタイルを適用するかを設定します。;
+*/
+
+
+div.anime_rotate {
+  animation-delay:0;
+  animation-direction:normal;
+  animation-duration:3s;
+  animation-iteration-count:1;
+  animation-name:anime_rotate;
+  animation-timing-function:linear;
+}
+
+@-webkit-keyframes anime_rotate {
+0% {-webkit-transform: rotate(0deg); opacity: 0;}
+100% {-webkit-transform: rotate(10deg); opacity: 1;}
+}

@@ -4,51 +4,118 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>numasaki.design==</title>
+  <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
   <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="css/animation.css" rel="stylesheet" type="text/css" /> -->
+
 </head>
 <body>
-  <header>
-    <h1>numasaki.design ==</h1>
-    <nav>
+  <div id="infoFrame" class="FloatInfo"></div>
+  <header class="content">
+    <h1 data-200="top:-5px; opacity:0;" data-400="top:10px; opacity:1;">numasaki.design ==</h1>
+    <nav data-200="top:-5px; left:50%; opacity:0;" data-400="top:10px; opacity:1;">
       <ul>
-        <li>skill</li>
-        <li>works</li>
-        <li>media</li>
+        <li><a href="#SKILL">skill</a></li>
+        <li><a href="#WORKS">works</a></li>
+        <li><a href="#MEDIA">media</a></li>
       </ul>
     </nav>
   </header>
 
-  <secton id="TITLE">
-    <!--titleAnimation-->
+  <section id="TITLE" class="content">
+    <div class="anime_rotate" data-100="width:200px; margin:-100px; height:200px; top:50%; left:50%; opacity:1.0;" data-300="left:25; margin:-200px; top50%; width:400px; height:400px; opacity:0;"></div>
+    <div class="anime_rotate" data-100="width:200px; margin:-100px; height:200px; top:50%; left:50%; opacity:1.0;" data-300="left:50%; margin:-200px; top:50%;  width:400px; height:400px; opacity:0;"></div>
+    <div class="anime_rotate" data-100="width:200px; margin:-100px; height:200px; top:50%; left:50%; opacity:1.0;" data-300="left:75%; margin:-200px; top:50%; width:400px; height:400px; opacity:0;"></div>
   </section>
-
   <section id="SKILL">
-    <div class="skill_1"><!--3ways -->
+    <div class="skill_1">
+      <ul>
+        <li data-200="opacity:0; top:30%; left:0;" data-400="opacity:1.0; top:25%;" data-600="opacity:1;" data-700="opacity:0;">
+          <div></div>
+        </li>
+        <li data-200="opacity:0; top:30%; left:33%;" data-400="opacity:1.0; top:25%;" data-600="opacity:1;" data-700="opacity:0;">
+          <div></div>
+        </li>
+        <li data-200="opacity:0; top:30%; left:66%;" data-400="opacity:1.0; top:25%;" data-600="opacity:1;" data-700="opacity:0;">
+          <div></div>
+        </li>
+      </ul>
     </div>
-    <div class="skill_2"><!--tool list-->
+    <div class="skill_2">
+      <h2 data-200="opacity:0; top:60%; left:0;" data-400="opacity:1.0; top:60%;" data-600="top:60%" data-800="top:20%">Service Design</h2>
+      <ul data-800="opacity:0; top:30%; left:0;" data-1000="opacity:1.0; top:25%;">
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+      </ul>
+
+      <h2 data-200="opacity:0; top:60%; left:33%;" data-400="opacity:1.0; top:60%;" data-600="top:60%" data-800="top:20%">UI Design</h2>
+      <ul data-800="opacity:0; top:30%; left:33%;" data-1000="opacity:1.0; top:25%;">
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+      </ul>
+
+      <h2 data-200="opacity:0; top:60%; left:66%;" data-400="opacity:1.0; top:60%;" data-600="top:60%" data-800="top:20%">Dev Design</h2>
+      <ul data-800="opacity:0; top:30%; left:66%;" data-1000="opacity:1.0; top:25%;">
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+        <li><div>IMG：</div><div>TOONAME</div></li>
+      </ul>
     </div>
   </section>
 
-  <section id="WORKS"><!--works-->
+  <section id="WORKS"  class="iemo" data-1000="top:800px;" data-4200="top:-2400px;">
     <ul>
-      <li class="iemo"><!--iemo-->
+      <li class="iemo">
+        iemo
       </li>
 
-      <li class="babygoat"><!--babygoat-->
+      <li class="babygoat">
+        babygoat
       </li>
 
-      <li class="yawn"><!--yawn-->
+      <li class="yawn">
+        yawn
       </li>
 
-      <li class="kencom"><!--kencom-->
+      <li class="kencom">
+        kencom
       </li>
     </ul>
   </section>
 
-  <section id="MEDIA">
-    <!--media-->
+  <section id="MEDIA" data-4200="top:800px;" data-5000="top:0;">
+    <ul>
+      <li><a href="http://www.slideshare.net/MayumiNarisawa/xcode-up-5">デザイナーがXcodeを使って 開発効率をUPさせた 5つのエピソード + 現場エンジニアのコメント付き</a></li>
+      <li><a href="https://speakerdeck.com/numasaki/designers-to-implement">エンジニアリングするデザイナーが領域を超えて見えたこと</a></li>
+    </ul>
+
   </section>
 
   <script type="text/javascript" src="src/skrollr.js"></script>
   <script type="text/javascript" src="src/skrollr.min.js"></script>
+  <script type="text/javascript">
+    skrollr.init();
+  </script>
+
+  <script type="text/javascript">
+    function onScroll() {
+      if (navigator.userAgent.toLowerCase().match(/webkit|msie 5/)) {
+        documentElement = document.body;
+      } else {
+        documentElement = document.documentElement;
+      }
+      var infoF = document.getElementById("infoFrame");
+      infoF.innerHTML = "ScrollY:" + documentElement.scrollTop;
+    }
+    window.onscroll = onScroll;
+  </script>
 </body>
+</html>

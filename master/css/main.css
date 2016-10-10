@@ -12,65 +12,53 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 html, body {
 	line-height: 1;
 	min-height:100%;
 	font-family:Artial, Verdana, sans-serif;
+	background-color: #f7f7f7;
 }
-/*
 .content {
     position: relative;
     width: 100%;
-    height: 800px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
-.first {
-  display: block;
-  background:#FFCCCC url(img/section01.png) 50% 0 no-repeat;
-  background-attachment:fixed;
-}
-.second {
-	//background:#FFCCCC url(img/section01.png) 50% 0 no-repeat;
-  background-attachment:fixed;
-}
-.third {
-  background:#d2f6f8 50% 0 no-repeat;
-  background-attachment:fixed;
-}
-*/
 
-body {
-	width: 1440x;
-}
+.FloatInfo{
+		position:fixed;
+		bottom:0px;
+		right:16px;
+		width:240px;
+		height:60px;
+		color: #FFFFFF;
+		background-color:#666666;
+		z-index: 999;
+	}
 
 header {
 	width: 100%;
 	padding: 10px;
 	background-color: #eeeeee;
-	display: -moz-box;
-	display: -webkit-box;
-	display: -o-box;
-	display: -ms-box;
+	z-index: 999;
 }
 
 header h1 {
 	width: 50%;
 	font-size: 12pt;
-	-moz-box-flex:1;
-	-webkit-box-flex:1;
-	-o-box-flex:1;
-	-ms-box-flex:1;
 }
 header nav {
 	width: 50%;
-	-moz-box-flex:1;
-	-webkit-box-flex:1;
-	-o-box-flex:1;
-	-ms-box-flex:1;
 }
 
 nav ul {
-	list-style: none;
 	display: -moz-box;
 	display: -webkit-box;
 	display: -o-box;
@@ -88,43 +76,114 @@ nav ul li {
 
 #TITLE {
 	height: 800px;
-	background-color: #BFEAE6;
 }
+
+	#TITLE div:nth-child(1) {
+		width: 200px;
+		height:200px ;
+		background: url(../img/circle_dot.png) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	#TITLE div:nth-child(2) {
+		width: 200px;
+		height:200px ;
+		background: url(../img/circle_border.png) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	#TITLE div:nth-child(3) {
+		width: 200px;
+		height:200px ;
+		background: url(../img/circle_draw.png) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
 
 #SKILL {
+	width: 100%;
 }
 	#SKILL .skill_1 {
-		height: 800px;
-		background-color: #BFD6EA;
+		height: 100%;
+		background-color: #f7f7f7;
 	}
-	#SKILL .skill_2 {
-		height: 800px;
-		background-color: #ABC0D2;
+	#SKILL .skill_1 ul {
+		width: 100%;
 	}
 
+	#SKILL .skill_1 ul li {
+		width: 33%;
+	}
+	#SKILL .skill_1 ul li div {
+		width: 200px;
+		height: 200px;
+		background-color: #EEEEEE;
+		margin: 0 auto;
+		border-radius: 90px;
+	}
+
+	#SKILL .skill_2 {
+		width: 100%;
+	}
+	#SKILL .skill_2 h2 {
+		text-align: center;
+		color: #cccccc;
+		width: 33%;
+	}
+	#SKILL .skill_2 ul {
+		width: 33%;
+	}
+	#SKILL .skill_2 ul li {
+		width: 80%;
+		background-color: red;
+		margin: 0 auto;
+		clear: left;
+
+	}
+
+	#SKILL .skill_2 ul li div {
+		float: left;
+		margin-right: 2%;
+	}
+
+
 #WORKS {
+	width: 100%;
+	height: 3200px;
 }
 	#WORKS .iemo {
+		width: 100%;
 		height: 800px;
 		background-color: #2CC193;
 	}
 
 	#WORKS .babygoat {
+		width: 100%;
 		height: 800px;
 		background-color: #414644;
 	}
 
 	#WORKS .yawn {
+		width: 100%;
 		height: 800px;
 		background-color: #BDB266;
 	}
 
 	#WORKS .kencom {
+		width: 100%;
 		height: 800px;
 		background-color: #D96F1B;
 	}
 
 #MEDIA {
-	height: 800px;
-	background-color: #DCEABF;
+	width: 100%;
+	min-height: 800px;
+	background-color: #F7F7F7;
+	text-align: center;
+}
+#MEDIA ul {
+	margin: 100px auto;
+}
+
+#MEDIA ul li{
+	margin-top: 10px;
 }
